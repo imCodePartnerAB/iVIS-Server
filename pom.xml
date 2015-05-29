@@ -27,6 +27,8 @@
     </dependencies>
 
     <build>
+        <finalName>ivisappserver</finalName>
+
         <plugins>
             <plugin>
                 <artifactId>maven-antrun-plugin</artifactId>
