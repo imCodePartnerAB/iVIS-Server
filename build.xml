@@ -29,7 +29,7 @@
     <target name="tomcat-package" depends="package">
         <delete dir="${tomcat.webapps.dir}/WEB-INF/lib"/>
         <copy todir="${tomcat.webapps.dir}">
-            <fileset dir="target/ivisappserver"/>
+            <fileset dir="target/ivis"/>
         </copy>
     </target>
 
@@ -40,7 +40,7 @@
     </target>
 
     <target name="quick-copy-to-target">
-        <copy todir="target/ivisappserver">
+        <copy todir="target/ivis">
             <fileset dir="src/main/webapp" />
         </copy>
     </target>
