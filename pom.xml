@@ -51,9 +51,9 @@
 
                                 <taskdef name="mergeproperties" classname="com.imcode.ant.tasks.PropertiesMerge"/>
                                 <mergeproperties
-                                        srcFile="target/${project.build.finalName}/WEB-INF/classes/server.properties"
+                                        srcFile="target/${project.build.finalName}/WEB-INF/server.properties"
                                         mergeFile="${basedir}/local.server.properties"
-                                        destFile="target/${project.build.finalName}/WEB-INF/classes/server.properties"/>
+                                        destFile="target/${project.build.finalName}/WEB-INF/server.properties"/>
 
                                 <if>
                                     <available file="${basedir}/src/main/webapp/WEB-INF/web.xml"/>
@@ -113,6 +113,11 @@
         <repository>
             <id>imcode</id>
             <url>http://repo.imcode.com/maven2</url>
+            <snapshots>
+                <checksumPolicy>warn</checksumPolicy>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
         </repository>
         <repository>
             <id>central</id>
