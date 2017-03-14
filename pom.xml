@@ -19,7 +19,7 @@
         <dependency>
             <groupId>com.imcode.ivis</groupId>
             <artifactId>ivis-server</artifactId>
-            <version>1.0.0-alpha3-SNAPSHO</version>
+            <version>1.0.0-alpha3-SNAPSHOT</version>
             <classifier>classes</classifier>
             <type>jar</type>
             <scope>provided</scope>
